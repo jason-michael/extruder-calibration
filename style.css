@@ -67,24 +67,3 @@ form {
     text-align: end;
     font-weight: 600;
 }
-
-#help {
-    width: 32px;
-    height: 32px;
-    background: none;
-    color: #666;
-    font-weight: 900;
-    outline: none;
-    border: 1px solid #666;
-    border-radius: 50%;
-    transition: 0.2s;
-}
-
-#help:hover {
-    cursor: pointer;
-    background: slateblue;
-    color: #eee;
-    border: 1px solid #eee;
-    border-radius: 0;
-    box-shadow: 0 0 8px 2px slateblue;
-}

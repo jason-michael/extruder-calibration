@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Printer Extruder Calibration Calculator</title>
+    <!-- Font Awesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="flex-center">
+    <form>
+        <!-- Input -->
+        <h3>// Input</h3>
+
+        <!-- Distance from extruder to mark -->
+        <div class="form-control">
+            <label for="mark">Distance to mark</label>
+            <input id="mark" type="number" name="mark" value="120">
+        </div>
+
+        <!-- Amount to extrude -->
+        <div class="form-control">
+            <label for="extrude-amt">Amount to extrude</label>
+            <input id="extrude-amt" type="number" name="extrude-amt" value="100">
+        </div>
+
+        <!-- Distance from extruder to mark after extrusion -->
+        <div class="form-control">
+            <label for="extruder-mark-distance">Distance to mark <strong style="color: firebrick">after
+                    extrusion</strong></label>
+            <input id="extruder-mark-distance" type="number" name="extruder-mark-distance">
+        </div>
+
+        <!-- Current steps/mm -->
+        <div class="form-control">
+            <label for="steps-mm-current">Current steps/mm</label>
+            <input id="steps-mm-current" type="number" name="steps-mm-current">
+        </div>
+        <div class="separator"></div>
+
+        <!-- Output -->
+        <h3>// Output</h3>
+        <!-- Current extrusion type -->
+        <div class="form-control">
+            <label>Current extrusion</label>
+            <label id="status" class="status">-</label>
+        </div>
+        <!-- Actual extruded amount -->
+        <div class="form-control">
+            <label for="extrude-actual">Actual amount extruded</label>
+            <label id="extrude-actual" class="status">0.00</label>
+        </div>
+        <!-- Calibrated steps/mm -->
+        <div class="form-control">
+            <label for="steps-mm-new">Calibrated steps/mm</label>
+            <label id="steps-mm-new" class="status">0.00</label>
+        </div>
+        <div class="separator"></div>
+
+        <!-- Help -->
+        <div class="form-control">
+            <label>Help</label>
+            <button id="help">?</button>
+        </div>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>

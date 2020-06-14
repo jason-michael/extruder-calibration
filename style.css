@@ -1,0 +1,90 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif; 
+    font-size: 1.1rem;
+}
+
+html,
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background: #333;
+    color: #eee;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.separator {
+    margin: 1rem 0;
+    border-bottom: 1px solid #444;
+}
+
+form {
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.form-control {
+    display: flex;
+    margin: 1rem 0;
+    color: #bbb;
+}
+
+.form-control label {
+    flex: 1.5;
+}
+
+.form-control input,
+.form-control .status {
+    flex: 0.25;
+    width: 100%;
+    margin-left: 1rem;
+    padding: 0.33rem;
+    text-align: center;
+}
+
+.form-control input {
+    background: #444;
+    color: #bbb;
+    border: 1px solid #666;
+    outline: none;
+}
+
+.form-control input:focus {
+    border: 1px solid slateblue;
+}
+
+.form-control .status {
+    flex: 1;
+    text-align: end;
+    font-weight: 600;
+}
+
+#help {
+    width: 32px;
+    height: 32px;
+    background: none;
+    color: #666;
+    font-weight: 900;
+    outline: none;
+    border: 1px solid #666;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+#help:hover {
+    cursor: pointer;
+    background: slateblue;
+    color: #eee;
+    border: 1px solid #eee;
+    border-radius: 0;
+    box-shadow: 0 0 8px 2px slateblue;
+}
